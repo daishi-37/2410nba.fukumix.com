@@ -1,0 +1,54 @@
+@use "../mixin/breakpoint" as *;
+
+.pagination-type1__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 38px;
+}
+
+.pagination-type1__prev-link {
+    display: block;
+    width: 13.78px;
+    height: 25.22px;
+    background-color: var(--orange);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.pagination-type1__next-link {
+    display: block;
+    width: 13.78px;
+    height: 25.22px;
+    background-color: var(--orange);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.pagination-type1__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.pagination-type1__item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    font-weight: var(--font-weight__bold);
+}
+
+.pagination-type1__item.current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    font-size: 21px;
+    font-weight: var(--font-weight__bold);
+    color: var(--white);
+}

@@ -1,0 +1,210 @@
+@use "../mixin/breakpoint" as *;
+
+.mw_wp_form_input .confirm {
+    display: none;
+}
+
+.mw_wp_form_confirm .input {
+    display: none;
+}
+
+.form-type1__description {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    font-weight: var(--font-weight__bold);
+    padding-bottom: 25px;
+}
+
+.form-type1__label {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: var(--font-weight__bold);
+}
+
+.form-type1__label.require {
+    padding-left: 59px;
+}
+
+.form-type1__label.require::before {
+    content: "必須";
+    width: 47px;
+    height: 24px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red2);
+    border-radius: 12px;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.form-type1__row {
+    padding-bottom: 31px;
+    width: 100%;
+}
+
+.form-type1__input {
+    width: 100%;
+    height: 53px;
+    border: none;
+    /* border-radius: 0; */
+    /* background-color: var(--white); */
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    padding: 0 19px;
+    color: var(--black);
+    font-family: var(--font-family);
+    border: solid 1px var(--black);
+}
+
+.form-type1__content {
+    width: 100%;
+    height: 203px;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    padding: 14px 11px;
+    font-family: var(--font-family);
+    border: solid 1px var(--black);
+}
+
+.form-type1__row.textarea {
+    padding-bottom: 21px;
+}
+
+.form-type1__text {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    font-weight: var(--font-weight__medium);
+}
+
+.form-type1__select-wrap {
+    position: relative;
+}
+
+.form-type1__select-wrap::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10.3px;
+    height: 9px;
+    background-color: var(--black);
+    clip-path: polygon(0 0, 100% 0 , 50% 100%);
+    right: 11px;
+    top: 22px;
+    pointer-events: none;
+}
+
+.form-type1__link {
+    color: var(--red2) !important;
+    text-decoration: underline;
+}
+
+.form-type1__row.agree {
+    padding-bottom: 68px;
+}
+
+.form-type1__row.agree .error {
+    position: absolute;
+}
+
+.form-type1_inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 88px;
+}
+
+.form-type1 .btn-type3 {
+    width: 308px;
+    height: 55px;
+}
+
+.form-type1 .btn-type3::after {
+    top: 22px;
+}
+
+
+/****************************************************/
+/* Input                                            */
+/****************************************************/
+.mw_wp_form_input .btn-type3.back {
+    display: none;
+}
+
+
+/****************************************************/
+/* Confirm                                          */
+/****************************************************/
+
+
+.mw_wp_form_confirm .form-type1__label {
+    margin-bottom: 5px;
+}
+
+.mw_wp_form_confirm .form-type1__label.require {
+    padding-left: 0;
+}
+
+.mw_wp_form_confirm .form-type1__label.require::before {
+    content: none;
+}
+
+.mw_wp_form_confirm .form-type1__input-wrap {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+}
+
+.mw_wp_form_confirm .form-type1__row {
+    padding-bottom: 19px;
+    padding-top: 19px !important;
+    border-bottom: solid 1px var(--black2);
+}
+
+.mw_wp_form_confirm .form-type1__select-wrap::after {
+    content: none;
+}
+
+.mw_wp_form_confirm .form-type1__textarea-wrap {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+}
+
+.mw_wp_form_confirm .form-type1__row.agree {
+    display: none;
+}
+
+.mw_wp_form_confirm .form-type1__row.textarea {
+    margin-bottom: 54px;
+}
+
+.mw_wp_form_confirm .form-type1__btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@include md {
+    .mw_wp_form_confirm .form-type1__row {
+        padding: 15px 0;
+    }
+
+    .mw_wp_form_confirm .form-type1__row.btn-type1 {
+        margin-top: 30px;
+    }
+}

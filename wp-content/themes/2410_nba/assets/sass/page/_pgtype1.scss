@@ -1,0 +1,104 @@
+@use "../mixin/breakpoint" as *;
+
+.pgtype1 {
+    background-color: var(--gray);
+}
+
+
+/****************************************************/
+/* mv(main view)                                    */
+/****************************************************/
+.pgtype1-mv {
+    width: 100%;
+    padding-top: 31px;
+    padding-bottom: 203px;
+    background-image: url(../img/page/pgtype1-mv__bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.pgtype1-mv__inner {
+    padding-left: 139px;
+}
+
+.pgtype1-mv__title-en {
+    font-size: 100px;
+    font-family: var(--font-dosis);
+    font-weight: var(--font-weight__light);
+    letter-spacing: 0.05em;
+    line-height: 127px;
+}
+
+.pgtype1-mv__title-ja {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: var(--font-weight__bold);
+    letter-spacing: 0.1em;
+}
+
+
+/****************************************************/
+/* content                                          */
+/****************************************************/
+.pgtype1-content__box {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 97px 92px 73px;
+}
+
+.pgtype1-content__box p {
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.pgtype1-content__box h3 {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.12em;
+    font-weight: var(--font-weight__bold);
+}
+
+.pgtype1-content__box a {
+    color: var(--red);
+}
+
+
+/****************************************************/
+/* サイトマップ用　                                     */
+/****************************************************/
+.pgtype1-content__box .sitemap__lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pgtype1-content__box .sitemap__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black) !important;
+}
+
+.pgtype1-content__box .sitemap__sub-list {
+    padding-top: 12px;
+}
+
+.pgtype1-content__box .sitemap__next-list {
+    padding-top: 19px;
+}
+
+.pgtype1-content__box .sitemap__next-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black) !important;
+}
+
+.pgtype1-content__box .sitemap__sub-link {
+    font-size: 14px;
+    color: var(--black4) !important;
+}
+
+.pgtype1-content__box .sitemap__sub-link::before {
+    content: "- ";
+}

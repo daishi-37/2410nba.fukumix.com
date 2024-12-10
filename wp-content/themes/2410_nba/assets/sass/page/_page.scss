@@ -1,0 +1,14 @@
+@use "../mixin/breakpoint" as *;
+
+/****************************************************/
+/* contact                                          */
+/****************************************************/
+.pgtype1-content__contact-text {
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: var(--font-weight__bold);
+    color: var(--orange);
+    letter-spacing: 0.1em;
+    padding-bottom: 68px;
+}

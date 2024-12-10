@@ -1,0 +1,42 @@
+.pgtype4 {
+    background-image: url(../img/page/pgtype1-mv__bg.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.pgtype4-mv {
+    padding-top: 47px;
+}
+
+.pgtype4-mv__title-en {
+    font-size: 100px;
+    font-family: var(--font-dosis);
+    font-weight: var(--font-weight__light);
+    letter-spacing: 0.05em;
+    line-height: 127px;
+}
+
+.pgtype4-mv__title-ja {
+    font-size: 25px;
+    font-weight: var(--font-weight__bold);
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    padding-bottom: 16px;
+}
+
+.pgtype4-contnent__text {
+    font-weight: var(--font-weight__bold);
+    letter-spacing: 0.08em;
+    line-height: 24px;
+    padding-bottom: 26px;
+}
+
+.pgtype4-content__btn {
+    width: 308px;
+    height: 55px;
+}
+
+.pgtype4-content {
+    padding-bottom: 265px;
+}

@@ -1,0 +1,111 @@
+@use "../mixin/breakpoint" as *;
+
+.header__dummy {
+    height: var(--height__header);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--height__header);
+    position: fixed;
+    width: 100%;
+    background-color: var(--white);
+    z-index: var(--zindex__header);
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 3px 6px #00000007;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.header-logo {
+    padding-left: 26px;
+}
+
+.header-logo__link {
+    display: block;
+    width: 122px;
+}
+
+.header-navi {
+    margin-left: auto;
+    height: 100%;
+}
+
+.header-navi__lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header-navi__list {
+    padding-right: 32px;
+}
+
+.header-navi__link {
+    font-size: 16px;
+    font-weight: var(--font-weight__bold);
+    color: var(--black);
+}
+
+.header-navi__list.blank {
+    padding-right: 39px;
+}
+
+.header-navi__list.contact {
+    padding: 0;
+    height: 100%;
+}
+
+.contact .header-navi__link {
+    display: flex;
+    width: 191px;
+    height: 100%;
+    background-color: var(--orange);
+    color: var(--white);
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 63px;
+    position: relative;
+    font-size: 16px;
+    font-weight: var(--font-weight__medium);
+    letter-spacing: 0.05em;
+}
+
+.blank .header-navi__link {
+    padding-right: 18px;
+    position: relative;
+}
+
+.contact .header-navi__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 18px;
+    left: 28.3px;
+    background-image: url(../img/icon-email.svg);
+}
+
+.blank .header-navi__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../img/icon-blank.svg);
+}

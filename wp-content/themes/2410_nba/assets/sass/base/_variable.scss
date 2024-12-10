@@ -1,0 +1,88 @@
+@use "../mixin/breakpoint" as *;
+
+$widths: 
+1088px,
+904px,
+720px,
+628px,
+516px,
+;
+
+:root {
+    --white  : #FFFFFF;
+    --orange : #F8A702;
+    --red    : #FF0000;
+    --red2   : #DB0000;
+    --gray   : #F2F2F2;
+    --gray2  : #DBDBDB;
+    --gray3  : #EAEAEA;
+    --black  : #333333;
+    --black2 : #707070;
+    --black3 : #B9B9B9;
+    --black4 : #818181;
+
+    --font-family : "Zen Kaku Gothic New", sans-serif;
+    --font-dosis  : "Dosis", serif;
+
+    --font-weight__thin       : 100;
+    --font-weight__extralight : 200;
+    --font-weight__light      : 300;
+    --font-weight__regular    : 400;
+    --font-weight__medium     : 500;
+    --font-weight__semibold   : 600;
+    --font-weight__bold       : 700;
+    --font-weight__extrabold  : 800;
+    --font-weight__black      : 900; 
+
+    --width-base     : calc(100% - 70px);
+
+    @each $width in $widths {
+        $i: index($widths, $width);
+        --width-content#{$i} : #{$width};
+        --width#{$i} : min(var(--width-base), var(--width-content#{$i}));
+        --full-width#{$i} : min(100% , var(--width-content#{$i}));
+        --n-margin-width#{$i} : calc(-1 * max(((100cqw - var(--width-content#{$i})) / 2), 20px));
+    }
+
+    --height__adminbar : 32px;
+    --height__header   : 79px;
+    
+    --zindex__header    : 100;
+    --zindex__hamburger : 200;
+    --zindex__menu      : 300;
+    --zindex__modal     : 400;
+
+    --content-padding__top : 90px;
+    --content-padding__bottom : 140px;
+}
+
+@include md {
+    :root{
+        --height__header: 69px;
+        --content-padding__top : 45px;
+        --content-padding__bottom : 70px;
+    }
+}
+
+@include ad {
+    :root {
+        --height__adminbar : 46px;
+    }
+}
+
+/* standard-inner */
+.standard-inner {
+    margin: 0 auto;
+}
+
+@each $width in $widths {
+    $i: index($widths, $width);
+    .standard-inner.type#{$i} { width: var(--width#{$i}); }
+    .standard-inner.type#{$i}.fullwidth { width: var(--full-width#{$i}); }
+}
+
+
+@for $i from 1 through 300 {
+    .w#{$i} { width: #{$i}px !important; }
+    .pb#{$i} { padding-bottom: #{$i}px !important; }
+}

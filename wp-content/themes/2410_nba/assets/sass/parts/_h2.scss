@@ -1,0 +1,24 @@
+@use "../mixin/breakpoint" as *;
+
+
+/****************************************************/
+/* type1                                            */
+/****************************************************/
+.h2-type1.center {
+    text-align: center;
+}
+
+.h2-type1__en {
+    font-size: 80px;
+    line-height: 101px;
+    letter-spacing: 0.1em;
+    font-family: var(--font-dosis);
+    font-weight: var(--font-weight__light);
+}
+
+.h2-type1__ja {
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    font-weight: var(--font-weight__bold);
+}

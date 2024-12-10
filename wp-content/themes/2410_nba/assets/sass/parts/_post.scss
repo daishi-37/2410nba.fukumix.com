@@ -1,0 +1,44 @@
+@use "../mixin/breakpoint" as *;
+
+/****************************************************/
+/* type1                                            */
+/****************************************************/
+.post-type1__data {
+    font-size: 16px;
+    font-weight: var(--font-weight__bold);
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--orange);
+    padding-bottom: 13px;
+}
+
+.post-type1__title {
+    font-size: 20px;
+    font-weight: var(--font-weight__bold);
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    padding-bottom: 18px;
+    border-bottom: solid 1px var(--orange);
+    margin-bottom: 22px;
+}
+
+.post-type1__content {
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    padding-bottom: 58px;
+}
+
+.post-type1__btn {
+    width: 398px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+.post-type1__btn::after {
+    top: 22px;
+}
+
+.post-type1__btn a {
+    color: var(--white) !important;
+}

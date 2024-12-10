@@ -1,0 +1,5 @@
+@use "../mixin/breakpoint" as *;
+
+.fl-orange:first-letter {
+  color: var(--orange);
+}

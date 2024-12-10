@@ -1,0 +1,29 @@
+@use "../mixin/breakpoint" as *;
+
+.breadcrumb {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.breadcrumb__lists {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    padding: 16px 0;
+    padding-left: 26px;
+}
+
+.breadcrumb__list::after {
+    content: "/";
+    padding-right: 0.5em;
+}
+
+.breadcrumb__list:last-child::after {
+    content: none;
+}

@@ -1,0 +1,67 @@
+@use "../mixin/breakpoint" as *;
+
+.pgtype2 {
+    background-color: var(--gray);
+}
+
+
+/****************************************************/
+/* mv(main view)                                    */
+/****************************************************/
+.pgtype2-mv {
+    position: relative;
+}
+
+.pgtype2-mv__title {
+    width: 100%;
+    position: absolute;
+    padding-left: 140px;
+    padding-top: 36px;
+    padding-bottom: 138px;
+    background-image: url(../img/page/pgtype2-mv__title-bg.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.pgtype2-mv__title-en {
+    font-size: 44px;
+    font-weight: var(--font-weight__light);
+    font-family: var(--font-dosis);
+    letter-spacing: 0.05em;
+    line-height: 55px;
+}
+
+.pgtype2-mv__title-ja {
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    font-weight: var(--font-weight__bold);
+    line-height: 87px;
+}
+
+.pgtype2-mv__icon {
+    position: absolute;
+    width: 280px;
+    height: 140px;
+    display: flex;
+    background-color: var(--white);
+    left: 0;
+    right: 0;
+    bottom: 105px;
+    border-radius:  50% / 100% 100% 0 0;
+    margin: auto;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.pgtype2-mv__text {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-weight: var(--font-weight__bold);
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}

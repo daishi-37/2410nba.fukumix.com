@@ -1,0 +1,77 @@
+@use "../mixin/breakpoint" as *;
+
+
+/****************************************************/
+/* type1                                            */
+/****************************************************/
+.h3-type1 {
+    text-align: center;
+    padding-bottom: 18px;
+    color: var(--orange);
+}
+
+.h3-type1__en {
+    font-size: 30px;
+    font-weight: var(--font-weight__light);
+    letter-spacing: 0.1em;
+    font-family: var(--font-dosis);
+    line-height: 38px;
+    padding-bottom: 9px;
+}
+
+.h3-type1__ja {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: var(--font-weight__bold);
+    line-height: 29px;
+}
+
+
+/****************************************************/
+/* type2                                            */
+/****************************************************/
+.h3-type2 {
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+.h3-type2__text1 {
+    display: inline-block;
+    padding: 0 38px;
+    padding-bottom: 9px;
+    position: relative;
+    font-size: 20px;
+    font-weight: var(--font-weight__bold);
+    letter-spacing: 0.1em;
+    line-height: 29px;
+}
+
+.h3-type2__text1::before {
+    content: "";
+    background-image: url(../img/icon-arrow.svg);
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 46px;
+    transform: rotate(154deg);
+    left: 10px;
+    top: 6px;
+}
+
+.h3-type2__text1::after {
+    content: "";
+    background-image: url(../img/icon-arrow.svg);
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 46px;
+    transform: rotate(206deg);
+    top: 6px;
+    right: 10px;
+}
+
+.h3-type2__text2 {
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+}
